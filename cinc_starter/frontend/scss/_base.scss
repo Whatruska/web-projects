@@ -1,0 +1,86 @@
+@import'../libs/font-awesome/scss/brands.scss';
+@import'../libs/font-awesome/scss/fontawesome.scss';
+@import'../libs/font-awesome/scss/regular.scss';
+@import'../libs/font-awesome/scss/solid.scss';
+
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+@import'vars';
+
+.footer_top{
+  text-align: left;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link{
+  margin: $footer-link-margin;
+}
+
+.footer-info{
+  margin: $footer-info-margin;
+}
+
+.soc-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: $soc-icon-padding;
+  padding-left: 0px;
+}
+
+.soc-icon{
+  background-color: $soc-icon-bck;
+  color: $soc-icon-color;
+  padding: $soc-icon-padding;
+  margin: $soc-icon-padding;
+  border-radius: 50%;
+
+  i{
+    padding: $soc-icon-padding;
+  }
+}
+
+.facebook-btn{
+  i{
+    padding: $facebook-icon-padding;
+  }
+}
+
+.copyright{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  color: black;
+  :hover{
+    color: $decorate-color;
+  }
+}
+
+a:hover{
+  color: $decorate-color;
+  text-decoration: none;
+}
+
+.active{
+  position: relative;
+  &::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: $decorate-color;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+}

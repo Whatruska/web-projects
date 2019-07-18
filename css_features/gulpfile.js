@@ -40,11 +40,6 @@ gulp.task('clean', function () {
   return del('public');
 })
 
-gulp.task('animate', function () {
-  return gulp.src('app/libs/animate.css/**/*.*')
-  .pipe(gulp.dest('public/animate'));
-})
-
 gulp.task('watch', function () {
   gulp.watch('app/*.html', gulp.series('html'));
   gulp.watch('app/scss/**/*.scss', gulp.series('styles'));
@@ -63,5 +58,5 @@ gulp.task('serve', function () {
   browserSync.watch('app/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('build', gulp.series('clean', 'html', 'styles', 'fonts', 'scripts', 'img', 'animate'));
+gulp.task('build', gulp.series('clean', 'html', 'styles', 'fonts', 'scripts', 'img'));
 gulp.task('dev', gulp.series('build', gulp.parallel('serve', 'watch')));

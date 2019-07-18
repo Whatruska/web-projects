@@ -1,0 +1,65 @@
+@import'../libs/font-awesome/scss/brands.scss';
+@import'../libs/font-awesome/scss/fontawesome.scss';
+@import'../libs/font-awesome/scss/regular.scss';
+@import'../libs/font-awesome/scss/solid.scss';
+
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+@import'base';
+
+.preview{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px 0px;
+  &-img{
+    background-image: url('../img/post2.jpg');
+    padding: 200px 200px;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: center;
+  }
+  &-meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.preview-meta-author-avatar{
+  padding: 20px 20px;
+  width: 10%;
+  height: 10%;
+  @include border-radius(50%);
+  background-size: 50px 50px;
+  background-position: center;
+  background-image: url('../img/avatar.jpg');
+}
+
+.preview-title{
+  margin: 50px 0px;
+}
+
+.post-content{
+  margin: 10px 0px;
+}
+
+.soc-icons-text{
+  margin-top: 10px;
+}
+
+.post-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px 0px;
+}
+
+.wdgt-post-preview{
+  background-image: url('https://via.placeholder.com/100');
+  width: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include border-radius(50%);
+}

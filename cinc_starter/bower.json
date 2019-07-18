@@ -1,0 +1,21 @@
+{
+  "name": "lesson-gulp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Shevchenko Viacheslav"
+  ],
+  "license": "ISC",
+  "homepage": "/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "frontend/libs"
+  ],
+  "dependencies": {
+    "font-awesome": "^5.7.2"
+  }
+}

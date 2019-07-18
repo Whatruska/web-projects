@@ -1,0 +1,43 @@
+@mixin font($family, $size, $color){
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin transition($duration, $property, $timing){
+  transition-duration: $duration;
+  transition-property: $property;
+  transition-timing-function: $timing;
+}
+
+@mixin defaultTransition(){
+  @include transition(
+    0.5s,
+    all,
+    ease-in-out
+  )
+}
+
+@mixin reg_start_stat(){
+  color: $header_background;
+  background-color: white;
+}
+
+@mixin reg_final_stat(){
+  background-color: $header_background;
+  color: white;
+}
+
+@mixin addBlock(){
+  content: "";
+  display: block;
+  position: relative;
+}
+
+@mixin defaultFont(){
+  @include font(
+    'WRobotoRegular',
+    16px,
+    black
+  );
+}

@@ -1,0 +1,17 @@
+{
+  "name": "gulp-cources",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Whatruska"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

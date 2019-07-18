@@ -1,0 +1,53 @@
+@import'mixins';
+@import'vars';
+%shadow{
+  box-shadow: 0 8px 10px black;
+}
+
+ul{
+  list-style: none;
+}
+
+html {
+  position:relative;
+   min-height:100%;
+ }
+
+body {
+  height: 100%;
+  min-width:900px;
+}
+
+.footer{
+  position:absolute;
+  bottom: 0;
+  z-index: 100000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.header{
+  position: fixed;
+  z-index: 100000;
+}
+
+.container-fluid{
+  padding: 0px 0px;
+  width: 100%;
+}
+
+.header-link-list{
+  display: flex;
+  flex-direction: row;
+}
+
+.textarea{
+  resize: none;
+  outline: none;
+}
+
+hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

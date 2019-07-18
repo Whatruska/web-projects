@@ -1,0 +1,108 @@
+@import'vars';
+@import'mixins';
+
+@font-face {
+  font-family: CPoppinsRegular;
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: CPoppinsExtraBold;
+  src: url("../fonts/poppins-extrabold-webfont.woff2") format("woff2"), url("../fonts/poppins-extrabold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: CPoppinsBold;
+  src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: CPoppinsSemiBold;
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: CPoppinsLight;
+  src: url("../fonts/poppins-light-webfont.woff2") format("woff2"), url("../fonts/poppins-light-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: CPoppinsExtraLight;
+  src: url("../fonts/poppins-extralight-webfont.woff2") format("woff2"), url("../fonts/poppins-extralight-webfont.woff") format("woff");
+}
+
+.navbar-brand{
+  @include font('Poppins ExtraLight', 48px ,$logo-color);
+}
+
+.nav-item{
+  @include font('Poppins', 16px ,$black-color);
+}
+
+.footer-title{
+  @include font('Poppins SemiBold', 24px ,$black-color);
+}
+
+.footer-info{
+  @include font('Poppins Light', 16px ,$gray-color);
+}
+
+.footer-link, .footer-tel{
+  @include font('Poppins', 16px ,$gray-color);
+}
+
+.copyright{
+  @include font('Poppins Light', 16px ,$black-color);
+}
+
+.page-info{
+  @include font('Poppins ExtraBold', 36px ,$black-color);
+}
+
+.page-desc{
+  @include font('Poppins Light', 16px ,$gray-color);
+}
+
+.post-item-category{
+  @include font('Poppins', 12px, $black-color);
+}
+
+.post-item-name{
+  @include font('Poppins SemiBold', 24px, $black-color);
+}
+
+.post-item-desc{
+  @include font('Poppins Light', 12px, $gray-color);
+}
+
+.post-item-meta{
+  @include font('Poppins Light', 14px, $gray-color);
+  b{
+    @include font('Poppins SemiBold', 14px, $gray-color);
+  }
+}
+
+.btn-load{
+  @include font('Poppins SemiBold', 16px, $black-color);
+}
+
+.preview-title{
+  @include font('Poppins ExtraBold', 48px, $black-color);
+}
+
+.post-info{
+  @include font('Poppins',16px,$gray-color);
+}
+
+.soc-icons-text{
+  @include font('Poppins Light', 18px, $black-color);
+}
+
+.comment-list-counter, .wdgt-title{
+  @include font('Poppins SemiBold', 18px, $black-color);
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 35px;
+    height: 2px;
+    background-color: $decorate-color;
+  }
+}

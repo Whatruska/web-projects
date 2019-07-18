@@ -1,0 +1,87 @@
+@import'../libs/font-awesome/scss/brands.scss';
+@import'../libs/font-awesome/scss/fontawesome.scss';
+@import'../libs/font-awesome/scss/regular.scss';
+@import'../libs/font-awesome/scss/solid.scss';
+
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+@import 'base';
+
+.post-item-meta{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hr{
+  color: $footer-border-color;
+}
+
+.page-info{
+  margin: $page-info-margin;
+  position: relative;
+  &::after{
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: $decorate-color;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+  }
+}
+
+.post-item-meta{
+  color: $gray-color;
+}
+
+.load-btn-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: $load-btn-wrapper-margin;
+}
+
+.btn-load{
+  @include border-radius(2px);
+  padding: $load-btn-padding;
+  background-color: $btn-load-bck;
+  &:active{
+    color: $decorate-color;
+  }
+}
+
+article{
+  margin: $article-margin;
+}
+
+.post-item-img{
+  margin: $post-img-margin;
+  background-position: center;
+  width: 100%;
+}
+
+.post-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post-item{
+  margin: 15px 15px;
+  width: 30%;
+  &:first-child{
+    margin-left: 0px;
+  }
+  &:last-child{
+    margin-right: 0px;
+  }
+  &-sizer{
+    width: 30%;
+  }
+}
+
+.page-info, .page-desc{
+  margin-left: 15px;
+}
