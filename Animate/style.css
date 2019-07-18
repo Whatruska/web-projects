@@ -1,0 +1,19 @@
+*{
+  transition-duration: 2s;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 20px;
+}
+
+.item{
+  color: white;
+  background-color: #ff9c38;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 32px;
+  padding: 20px 20px;
+}
